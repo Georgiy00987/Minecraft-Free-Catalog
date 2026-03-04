@@ -34,8 +34,6 @@
 | 🌱 Сиды | `seeds.txt` | Через `/admin` |
 | 📐 Шаблоны миров | `world_templates.txt` | Через `/admin` |
 
-Репозиторий каталога: **[Georgiy00987/Shop-Minecraft](https://github.com/Georgiy00987/Shop-Minecraft)**
-
 ### Формат строки в `.txt`-файле
 
 ```
@@ -87,7 +85,7 @@ pip install -r requirements.txt
 ```env
 BOT_TOKEN=токен_от_BotFather
 ADMIN_IDS=123456789,987654321
-GITHUB_REPO=Georgiy00987/Shop-Minecraft
+GITHUB_REPO=owner/repo
 GITHUB_TOKEN=github_pat_...
 POPULAR_LIKES_LIMIT=50
 SUPPORT_URL=https://t.me/your_support
