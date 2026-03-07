@@ -50,11 +50,9 @@ class CatalogCache:
         """Принудительно сбросить кэш категории после записи на GitHub."""
         if category in self._store:
             del self._store[category]
-            log.info(f"Cache INVALIDATED [{category}]")
 
     def invalidate_all(self):
         self._store.clear()
-        log.info("Cache INVALIDATED ALL")
 
     def stats(self) -> str:
         now = time.monotonic()
@@ -105,7 +103,6 @@ class LikesCache:
 
     def invalidate(self):
         self._data = None
-        log.info("LikesCache INVALIDATED")
 
 
 likes_cache = LikesCache()
@@ -154,7 +151,6 @@ class UsersCache:
 
     def invalidate(self):
         self._data = None
-        log.info("UsersCache INVALIDATED")
 
 
 users_cache = UsersCache()
