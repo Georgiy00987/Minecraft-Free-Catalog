@@ -74,7 +74,6 @@ async def _cache_auto_invalidate():
         catalog_cache.invalidate_all()
         likes_cache.invalidate()   # сбрасываем и кэш лайков
         users_cache.invalidate()   # сбрасываем и кэш пользователей
-        logger.info(f"🔄 Кэш автоматически сброшен (каждые {CACHE_TTL}с)")
 
 
 # ══════════════════════════════════════════════
